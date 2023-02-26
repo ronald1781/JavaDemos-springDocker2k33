@@ -7,8 +7,12 @@
 #ENTRYPOINT ["java","-jar","/ms-anime.jar"]
 #===============================================
 #docker build -t practicnadocondocker:1.1 .
-#docker images --muestra imagenes de docker
-#docker run --net=host -p 8080:8092 idimagen
+#docker images -a --muestra imagenes de docker
+#docker run --net=host -p 8091:8092 idimagen
+#docker stop idcontainter
+
+#Detén todos los contenedores ejecutándose: docker stop $(docker ps -a -q)
+#Elimina todos los contenedores detenidos: docker rm $(docker ps -a -q)
 #===============================================
 #sudo apt update
 #sudo apt install openjdk-11-jdk
