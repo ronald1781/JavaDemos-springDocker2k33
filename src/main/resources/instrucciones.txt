@@ -1,0 +1,43 @@
+
+#===============================================
+#FROM openjdk:11 #11-jdk-slim
+#EXPOSE 8090
+#ARG JAR_FILE=ms-anime.jar
+#ADD ${JAR_FILE} ms-anime.jar
+#ENTRYPOINT ["java","-jar","/ms-anime.jar"]
+#===============================================
+#docker build -t practicnadocondocker:1.1 .
+#docker images --muestra imagenes de docker
+#docker run --net=host -p 8080:8092 idimagen
+#===============================================
+#sudo apt update
+#sudo apt install openjdk-11-jdk
+#sudo apt install default-jre
+#sudo nano /etc/environment
+#JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
+
+#===============================================
+#sudo apt install maven -y
+#mvn -version
+#otra forma
+#sudo apt install default-jdk -y
+#wget https://downloads.apache.org/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz -P /tmp
+#cd /tmp
+# tar -xvzf apache-maven-3.6.3-bin.tar.gz
+#sudo cp -r apache-maven-3.6.3 /opt/maven
+#sudo nano /etc/profile.d/maven.sh
+# CTL+O
+#export JAVA_HOME=/usr/lib/jvm/default-java
+#export M2_HOME=/opt/maven
+#export MAVEN_HOME=/opt/maven
+#export PATH=${M2_HOME}/bin:${PATH}
+#sudo chmod +x /etc/profile.d/maven.sh
+#source /etc/profile.d/maven.sh
+#MVN -VERSION
+#sudo apt remove maven
+#===============================================
+#ejecutar el proyecto por ssh el proyecto
+#java -jar target\webapp2-0.0.1-SNAPSHOT.jar
+#mvn spring-boot:run
+#./gradlew bootRun
+#===============================================
